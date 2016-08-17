@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./leaflet.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div id="map"></div>
+
+    <p>Change default building colors and shadows with <em>style()</em>.</p>
+
+    <p>
+      <div class="colorset">Wall color:
+        <button style="background:rgb(250,220,100);"      onclick="setStyle(this, 'wallColor')"></button>
+        <button style="background:rgba(100,100,250,0.7);" onclick="setStyle(this, 'wallColor')"></button>
+        <button style="background:rgb(250,100,100);"      onclick="setStyle(this, 'wallColor')"></button>
+      </div>
+
+      <div class="colorset">Roof color:
+        <button style="background:rgb(220,220,50);"  onclick="setStyle(this, 'roofColor')"></button>
+        <button style="background:rgb(150,100,150);" onclick="setStyle(this, 'roofColor')"></button>
+        <button style="background:rgb(200,150,100);" onclick="setStyle(this, 'roofColor')"></button>
+      </div>
+
+      <label><input type="checkbox" onclick="setStyle(this, 'shadows')" checked>Shadows</label>
+    </p>
+
+  </body>
+  <script src="./leaflet.js"></script>
+  <script src="./OSMBuildings-Leaflet.js"></script>
+  <script src="./script.js"></script>
+</html>
